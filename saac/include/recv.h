@@ -1,26 +1,26 @@
 #ifndef _RECV_H_
 #define _RECV_H_
 #include "acfamily.h"
-#ifdef _SEND_EFFECT		   // WON ADD ËÍÏÂÑ©¡¢ÏÂÓêµÈÌØÐ§
+#ifdef _SEND_EFFECT		   // WON ADD ï¿½ï¿½ï¿½ï¿½Ñ©ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§
 void SendEffect(char *ffect);
 #endif
 
-#ifdef _AC_SEND_FM_PK		 // WON ADD ×¯Ô°¶ÔÕ½ÁÐ±í´¢´æÔÚAC
+#ifdef _AC_SEND_FM_PK		 // WON ADD ×¯Ô°ï¿½ï¿½Õ½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½AC
 void load_fm_pk_list(void);
 void save_fm_pk_list(void);
-char fm_pk_list[FMPKLIST_MAXNUM][255];
+extern char fm_pk_list[FMPKLIST_MAXNUM][255];
 #endif
 
-#ifdef _ALLDOMAN // Syu ADD ÅÅÐÐ°ñNPC
-void LOAD_herolist(); 
+#ifdef _ALLDOMAN // Syu ADD ï¿½ï¿½ï¿½Ð°ï¿½NPC
+void LOAD_herolist();
 void SAVE_herolist(int);
 void Send_A_herolist(int);
 
-void Send_S_herolist( char *ocdkey , char *oname , char *ncdkey , char *nname , 
+void Send_S_herolist( char *ocdkey , char *oname , char *ncdkey , char *nname ,
 					 char *title , int level , int trns , int floor );
 #define MAX_HERO_COLUMN 7
 #define MAX_HERO_LIST 100
-char Herolist[MAX_HERO_LIST][MAX_HERO_COLUMN][72];
+extern char Herolist[MAX_HERO_LIST][MAX_HERO_COLUMN][72];
 #endif
 
 typedef struct tagUNLOCKMENUS{
