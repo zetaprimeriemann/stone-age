@@ -1,17 +1,17 @@
 #ifndef _RECV_H_
 #define _RECV_H_
 #include "acfamily.h"
-#ifdef _SEND_EFFECT		   // WON ADD О©╫О©╫О©╫О©╫я╘О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫п╖
+#ifdef _SEND_EFFECT		   // WON ADD кмобя╘║╒обсЙ╣хльп╖
 void SendEffect(char *ffect);
 #endif
 
-#ifdef _AC_SEND_FM_PK		 // WON ADD в╞т╟О©╫О©╫у╫О©╫п╠О©╫О©╫О©╫О©╫О©╫О©╫О©╫AC
+#ifdef _AC_SEND_FM_PK		 // WON ADD в╞т╟╤ту╫ап╠М╢╒╢ФтзAC
 void load_fm_pk_list(void);
 void save_fm_pk_list(void);
 extern char fm_pk_list[FMPKLIST_MAXNUM][255];
 #endif
 
-#ifdef _ALLDOMAN // Syu ADD О©╫О©╫О©╫п╟О©╫NPC
+#ifdef _ALLDOMAN // Syu ADD еепп╟ЯNPC
 void LOAD_herolist();
 void SAVE_herolist(int);
 void Send_A_herolist(int);
