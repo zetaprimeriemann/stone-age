@@ -21,10 +21,10 @@ CFLAGS=-O3 -w $(INCFLAGS)
 #CFLAGS=-march=pentium4 -O3 -pipe -fomit-frame-pointer $(INCFLAGS)
 #Athlon XP (AMD)
 #CFLAGS="-march=athlon-xp -O3 -pipe -fomit-frame-pointer" $(INCFLAGS)
-#Athlon64£º
+#Athlon64ï¼š
 #CFLAGS="-O2 -march=athlon64 -ftracer -fprefetch-loop-arrays -pipe" $(INCFLAGS)
 
-#¼ÓÈëmysql×ÊÁÏ¿â¹¦ÄÜ¯à
+#åŠ å…¥mysqlèµ„æ–™åº“åŠŸèƒ½
 MYSQL= -lz -L/usr/lib64/mysql -lmysqlclient
 
 TOP=../..
@@ -40,7 +40,7 @@ RPCSRC = saacproto_serv.c saacproto_util.c
 RPCINCLUDE = saacproto_serv.h saacproto_util.h mac.h
 RPCNOUSE = saacproto_cli.c saacproto_cli.h
 
-#¼ÓÈëmysql×ÊÁÏ¿â¹¦ÄÜ¥\¯à
+#åŠ å…¥mysqlèµ„æ–™åº“åŠŸèƒ½
 SRC = main.c recv.c util.c char.c db.c mail.c acfamily.c lock.c sasql.c $(RPCSRC)
 #SRC = main.c recv.c util.c char.c db.c mail.c acfamily.c lock.c $(RPCSRC)
 
